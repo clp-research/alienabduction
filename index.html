@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content=" Alien Abduction ">
+  <meta name="keywords" content="Alien Abduction, Abductive reasoning, Inductive Reasoning">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>alienabduction</title>
+
+  <script>
+    function updateSingleVideo() {
+      var demo = document.getElementById("single-menu-demos").value;
+      var task = document.getElementById("single-menu-tasks").value;
+      var inst = document.getElementById("single-menu-instances").value;
+
+      console.log("single", demo, task, inst)
+    }
+
+    function updateQpredVideo() {
+      var task = document.getElementById("single-menu-qpred").value;
+
+      console.log("qpred", task)
+    }
+
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body onload="updateSingleVideo(); updateQpredVideo();">
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title"><span class="alienabduction">Alien Abduction</span></h1> 
+          <h3 class="title is-4 conference-authors"><a target="_blank" href="https://arxiv.org/abs/2608.03388">EACL 2027</a></h3>
+          <!-- <h3 class="title is-4 conference-authors">Extended version in <a target="_blank" href="https://link.springer.com/article/10.1007/s10514-023-10135-3">Autonomous Robots 2023</a></h3>-->
+          <div class="is-size-4 publication-authors">
+            <span class="author-block">
+              <a target="_blank" href="https://github.com/mohiuddinshahrukh">Shahrukh Mohiuddin</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a target="_blank" href="https://scholar.google.com/citations?user=mXxxfRIAAAAJ&hl=en">Kranti CH</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a target="_blank" href="https://scholar.google.com/citations?user=7cm4SVgAAAAJ&hl=en&oi=ao">Sherzod Hakimov</a><sup>1</sup></span>
+            <span class="author-block">
+              <a target="_blank" href="https://scholar.google.com/citations?user=QoDgwZYAAAAJ&hl=en&oi=ao">David Schlangen</a><sup>1,2</sup></span>
+            </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>University of Potsdam, Potsdam, Germany</span>
+            <span class="author-block"><sup>2</sup>German Research Center for Artificial Intelligence (DFKI), Berlin, Germany</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a target="_blank" href="https://arxiv.org/pdf/2606.02806"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>EACL<sup>2027</sup> Paper</span>
+                </a>
+              </span>            
+
+            <!-- Source Code Link. -->
+            <span class="link-block">
+              <a target="_blank" href="https://github.com/clp-research/alienabduction.github.io/tree/main/code"
+                 class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                    <i class="fab fa-github"></i>
+                </span>
+                <span>Code</span>
+                </a>
+            </span>            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- DO DiFF ENVS -->
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+Abductive reasoning requires forming hypotheses that explain observed evidence and revising them as new evidence becomes available. While large language models (LLMs) are often evaluated on whether they solve abductive reasoning tasks correctly, less is known about how they acquire evidence, update their hypotheses, and decide when to stop. We introduce Alien Abduction game, an interactive probe for studying these behaviours under different interaction modes. The modes vary in whether evidence is provided upfront or across turns, and whether queries are selected by the model or examples are provided by the oracle. Across models, providing evidence upfront leads to higher success rates than distributing it across turns. In multi-turn settings, some models commit before using the available evidence, while others exhaust the turn budget without converging. Models also achieve higher success rates when examples are provided by the oracle than when they select their own queries, although their final hypotheses are more consistent with the evidence they selected. These findings suggest that models may form hypotheses that fit self-selected evidence without sufficiently distinguishing them from alternatives, and may struggle to validate and refine their hypotheses or determine when to stop.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+
+  <!-- Paper video.
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-two-thirds">
+      <h2 class="title is-3">Add the video here </h2>
+      <div class="publication-video">
+          <video poster="" id="mask" controls playsinline height="100%">
+            <source src=""
+                    type="video/mp4">
+          </video>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- Paper audio.
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-two-thirds">
+      <h2 class="title is-3">Add the audio here</h2>
+      <div class="publication-video">
+          <audio poster="" id="mask" controls playsinline height="100%">
+            <source src=""
+                    type="audio/mp4">
+          </audio>
+      </div>
+    </div>
+  </div> -->  
+
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-widescreen content">
+    <h2 class="title">BibTeX</h2>
+ <pre><code>@inproceedings{mohiuddin-kranti-etal-2027-alienabduction,
+    title = "Don’t Let Me Ask for It: LLMs Show Deficiencies in Active Multi-Turn
+Information Acquisition for Abductive Inference",
+    author = "Shahrukh, Mohiuddin  and
+      Chalamalasetti, Kranti  and
+      Hakimov, Sherzod  and
+      Schlangen, David",
+    booktitle = "Proceedings of the 20th Conference of the {E}uropean Chapter of the {A}ssociation for {C}omputational {L}inguistics (Volume 1: Long Papers)",
+    month = mar,
+    year = "2027",
+    publisher = "Association for Computational Linguistics",
+    url = "https://arxiv.org/pdf/2606.02806"
+}
+</code></pre> 
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column">
+        <div class="content has-text-centered">
+          <p>
+            Website template borrowed from <a href="https://github.com/nerfies/nerfies.github.io">NeRFies</a> and <a href="https://github.com/peract/peract.github.io">PerAct</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>
