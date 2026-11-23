@@ -1,0 +1,10 @@
+[
+  { "model_name": "gpt-4.1-2025-04-14", "model_id": "gpt-4.1-2025-04-14", "backend": "openai", "release_date": "2025-04-14" },
+  { "model_name": "gpt-4.1-mini", "model_id": "gpt-4.1-mini", "backend": "openai", "release_date": "2025-04-14" },
+  { "model_name": "gpt-4.1-nano", "model_id": "gpt-4.1-nano", "backend": "openai", "release_date": "2025-04-14" },
+
+  { "model_name": "gpt-5-mini", "model_id": "gpt-5-mini", "backend": "openai", "release_date": "2025-08-07" },
+  { "model_name": "gpt-5-nano", "model_id": "gpt-5-nano", "backend": "openai", "release_date": "2025-08-07" },
+
+  { "model_name": "Qwen/Qwen3-VL-30B-A3B-Instruct-FP8", "model_id": "Qwen/Qwen3-VL-30B-A3B-Instruct-FP8", "backend": "openai_compatible" }
+]
